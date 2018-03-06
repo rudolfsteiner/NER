@@ -15,11 +15,14 @@ bar” or “the farm”.
 
 We formulate this as a 5-class classification problem, using the four above classes and a null-class (O) for words that do not represent a named entity (most words fall into this category). For an entity that spans multiple words (“Department of Defense”), each word is separately tagged, and every contiguous sequence of non-null tags is considered to be an entity.
 
-1. A window into NER (window.py)
+####1. A window into NER (window.py)
+
 Build a simple baseline model that predicts a label for each token separately using features from a window around it.
 
-2. Recurrent neural nets for NER (rnn.py)
+####2. Recurrent neural nets for NER (rnn.py)
+
 We will now tackle the task of NER by using a recurrent neural network (RNN).
 
-3. Grooving with GRUs (gru.py)
+####3. Grooving with GRUs (gru.py)
+
 Using GRUs to reduce the problem of vanishing gradients and improve the performance of NER.
